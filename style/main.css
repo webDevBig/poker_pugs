@@ -1,0 +1,1177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+body.overflow_hidden {
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 66px 112px 0px 48px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-link {
+    color: #f0daba;
+    font-size: 25px;
+    font-family: 'Cinzel-Bold';
+    text-transform: uppercase;
+    margin: 0 45px;
+    cursor: pointer;
+}
+
+header .icon_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_box a {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.discord_icon img {
+    max-width: 90px;
+}
+
+.twitter_icon img {
+    max-width: 76px;
+}
+
+.magic_icon img {
+    max-width: 103px;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    max-height: 1120px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+}
+
+#home img {
+    max-width: 100%;
+}
+
+#home {
+    background-image: url(../img/home_bg.png);
+    background-position: 50% 22%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 66px;
+    align-items: flex-end;
+}
+
+#home .content {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text_img {
+    display: none;
+}
+
+#about {
+    background-color: #b0a282;
+    padding: 0 42px 0 60px;
+}
+
+#about .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#about img {
+    max-width: 793px;
+}
+
+#about .text {
+    color: #270c02;
+    font-size: 26px;
+    line-height: 34px;
+    font-family: 'Cinzel-Black';
+    letter-spacing: 2.6px;
+    margin: 0 0 40px;
+}
+
+#about .text:last-of-type {
+    margin: 0;
+}
+
+#benefits {
+    background-color: #161d22;
+    padding: 25px 0 0;
+    min-height: 1100px;
+}
+
+#benefits .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#benefits .h1 {
+    color: #fac88e;
+    font-size: 80px;
+    font-family: 'Cinzel-Bold';
+    letter-spacing: 8.8px;
+    text-shadow: 5px 16px 1px rgb(0 0 0 / 43%);
+    margin: 0 0 76px;
+}
+
+.benefits_box {
+    width: 100%;
+    max-width: 1796px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.benefits_box .item {
+    max-width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 40px;
+}
+
+.benefits_box img {
+    max-width: 200px;
+}
+
+.benefits_box .title {
+    color: #f9f8f7;
+    font-size: 27px;
+    font-family: 'Cinzel-Bold';
+    text-transform: uppercase;
+}
+
+.benefits_box ul {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 15px;
+    line-height: 27px;
+    color: #fac88e;
+    font-family: 'Cinzel-Bold';
+    letter-spacing: 1.25px;
+}
+
+#roadmap {
+    background-color: #1e0e07;
+    min-height: 930px;
+    height: auto;
+    max-height: inherit;
+}
+
+#roadmap .content {
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 20px 0 40px;
+}
+
+#roadmap img {
+    margin: 0 18px;
+
+}
+
+#roadmap .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 16px;
+    color: black;
+    width: 405px;
+    height: 256px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 18px;
+}
+
+#roadmap .item .h1 {
+    text-transform: uppercase;
+    max-width: 80%;
+    text-align: center;
+    font-family: 'Cinzel-Black';
+    font-size: 34px;
+    line-height: 43px;
+    margin: 0 0 25px;
+}
+
+#roadmap .item span {
+    color: #dea43e;
+}
+
+#roadmap .item .text {
+    position: relative;
+    font-family: 'Cinzel-Bold';
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#roadmap .item1 {
+    width: 409px;
+    background-image: url(../img/roadmap_item1.png);
+    padding: 29px 32px 35px 31px;
+}
+
+#roadmap .item1 .text {
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+
+#roadmap .item2 {
+    width: 451px;
+    margin: 0 35px 0 18px;
+    background-image: url(../img/roadmap_item2.png);
+    padding: 29px 0px 35px 0px;
+}
+
+#roadmap .item2 .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+#roadmap .item2 .h1 {
+    margin: 0 0 15px;
+}
+
+#roadmap .item3 {
+    width: 410px;
+    margin: 0 18px 0 35px;
+    background-image: url(../img/roadmap_item3.png);
+    padding: 29px 0px 35px 0px;
+}
+
+#roadmap .item3 .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+#roadmap .item4 {
+    background-image: url(../img/roadmap_item4.png);
+    padding: 29px 32px 59px 31px;
+}
+
+#roadmap .item5 {
+    width: 411px;
+    background-image: url(../img/roadmap_item5.png);
+    padding: 29px 0 20px;
+    justify-content: center;
+}
+
+#roadmap .item5 .h1 {
+    margin: 0 0 20px;
+    font-size: 35px;
+}
+
+#roadmap .item6 {
+    width: 580px;
+    height: 269px;
+    background-image: url(../img/roadmap_item6.png);
+    padding: 29px 0px 60px;
+}
+
+#roadmap .item6 .h1 {
+    font-size: 58px;
+    line-height: 48px;
+}
+
+#roadmap .item7 {
+    width: 415px;
+    background-image: url(../img/roadmap_item7.png);
+    padding: 0px 0px 25px;
+}
+
+#roadmap .item7 .h1 {
+    margin: 0 0 20px;
+}
+
+#roadmap .item7 .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+#roadmap .item8 {
+    width: 550px;
+    height: 309px;
+    background-image: url(../img/roadmap_item8.png);
+    padding: 29px 0px 50px;
+}
+
+#roadmap .item8 .h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+#roadmap .item8 .text {
+    font-size: 15px;
+    text-align: center;
+}
+
+#team {
+    background-color: #00262c;
+    padding: 80px 70px 70px;
+    min-height: 950px;
+}
+
+#team .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+
+#team .h1 {
+    color: #b5804d;
+    font-size: 70px;
+    letter-spacing: 7px;
+    font-family: 'Cinzel-Bold';
+    margin: 0 0 80px;
+}
+
+#team .team_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#team .img_box {
+    border: 7px solid white;
+    border-radius: 7px;
+    box-shadow: 11px 11px 2px rgba(0, 12, 15, 0.43);
+    width: 533px;
+    height: 533px;
+    margin: 0 0 30px;
+}
+
+#team .img_box img {
+    max-width: 100%;
+}
+
+#team .name {
+    color: #b5804d;
+    font-size: 43px;
+    letter-spacing: 3px;
+    font-family: 'Cinzel-Bold';
+    text-align: center;
+    line-height: 1;
+}
+
+#team .role {
+    color: white;
+    font-size: 34px;
+    letter-spacing: 3px;
+    font-family: 'Cinzel-Bold';
+    text-align: center;
+    line-height: 1;
+}
+
+#FAQ {
+    background-image: url(../img/faq_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    padding: 0 0 60px;
+    height: auto;
+}
+
+#FAQ .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    min-height: 100%;
+    padding: 80px 165px 0;
+}
+
+#FAQ .h1 {
+    color: #f2f1d9;
+    font-size: 137px;
+    letter-spacing: 10px;
+    font-family: 'Cinzel-Black';
+    margin: 0 0 30px;
+}
+
+.faq_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.faq_box .accordion {
+    width: 48%;
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.accordion-body {
+    color: white;
+    padding: 0px 57px 37px;
+    font-family: 'Cinzel-Medium';
+    font-size: 16px;
+        letter-spacing: 2px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    background-color: #e6cd99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+footer .text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+}
+
+footer .h1 {
+    font-family: 'Cinzel-Black';
+    color: #271b01;
+    font-size: 93px;
+    letter-spacing: 9px;
+}
+
+footer .text {
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    color: #271b01;
+    font-family: 'Cinzel-Bold';
+    text-align: center;
+}
+
+footer .joinUs {
+    color: #653810;
+    font-family: 'Cinzel-Bold';
+    font-size: 50px;
+    letter-spacing: 5px;
+    background-color: #e7e2d8;
+    box-shadow: 5px 18px 2px rgb(0 0 0 / 43%);
+    padding: 20px 90px;
+    border-radius: 37px;
+    margin: 40px 0 0;
+    cursor: pointer;
+}
+
+footer img {
+    max-width: 670px;
+    margin: -130px 0 0;
+}
+
+
+@media all and (max-width:1920px) {
+    #home {
+        background-position: 50% 44%;
+    }
+
+    #benefits .h1 {
+        margin: 0 0 20px;
+        font-size: 64px;
+    }
+
+    .benefits_box .item {
+        margin: 0 0 20px;
+    }
+
+    .benefits_box ul {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    #team .h1 {
+        margin: 0 0 30px;
+    }
+
+    #team {
+        padding: 40px 70px 40px;
+        min-height: auto;
+    }
+
+    #team .img_box {
+        width: 485px;
+        height: 485px;
+    }
+
+    #FAQ .content {
+        padding: 40px 130px 0;
+    }
+
+    #FAQ .h1 {
+        font-size: 100px;
+    }
+
+    #FAQ {
+        height: auto;
+        padding: 0 0 70px;
+    }
+
+}
+
+@media all and (max-width:1660px) {
+    #about .text br {
+        display: none;
+    }
+
+    #about img {
+        max-width: 48%;
+    }
+
+    #benefits {
+        padding: 0;
+        min-height: 800px;
+    }
+
+    .benefits_box ul br {
+        display: none;
+    }
+
+    .benefits_box ul span {
+        width: 100%;
+    }
+
+    .benefits_box ul span br {
+        display: block;
+    }
+
+    .benefits_box .title {
+        font-size: 23px;
+    }
+
+    .benefits_box img {
+        max-width: 150px;
+    }
+
+    #benefits .content {
+        padding: 0 50px;
+    }
+
+    #benefits .h1 {
+        font-size: 60px;
+    }
+
+    #team .img_box {
+        width: 400px;
+        height: 400px;
+    }
+
+    #team .h1 {
+        font-size: 65px;
+    }
+
+    #team .name {
+        font-size: 35px;
+    }
+
+    #team .role {
+        font-size: 26px;
+    }
+
+    #FAQ {
+        min-height: 800px;
+    }
+
+    #FAQ .h1 {
+        font-size: 80px;
+    }
+
+    .accordion-button {
+        padding: 30px 57px;
+    }
+
+    footer .h1 {
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+
+    footer .text_box {
+        padding: 50px 0;
+    }
+
+    footer .joinUs {
+        font-size: 37px;
+    }
+
+    footer img {
+        max-width: 514px;
+    }
+
+    footer .text {
+        font-size: 17px;
+    }
+}
+
+@media all and (max-width:1440px) {
+    header {
+        padding: 40px 80px 0px 48px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin: 0 30px;
+    }
+
+    .discord_icon img {
+        max-width: 60px;
+    }
+
+    .twitter_icon img {
+        max-width: 50px;
+    }
+
+    .magic_icon img {
+        max-width: 70px;
+    }
+
+    #home {
+        background-position: 50% 36%;
+    }
+
+    #about .text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media all and (max-width:1344px) {
+    #team .img_box {
+        width: 340px;
+        height: 340px;
+    }
+
+    footer .h1 {
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+
+    footer .joinUs {
+        font-size: 29px;
+        box-shadow: 5px 14px 2px rgb(0 0 0 / 43%);
+        padding: 10px 59px;
+        border-radius: 21px;
+        margin: 17px 0 0;
+    }
+
+    footer .text {
+        font-size: 16px;
+    }
+
+    footer img {
+        max-width: 390px;
+    }
+
+    footer .text_box {
+        padding: 26px 0 45px;
+    }
+
+    #about {
+        min-height: auto;
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .nav-link {
+        margin: 0px 19px;
+    }
+
+    header {
+        padding: 40px 40px 0px 30px;
+    }
+
+    .discord_icon img {
+        max-width: 40px;
+    }
+
+    .twitter_icon img {
+        max-width: 30px;
+    }
+
+    .magic_icon img {
+        max-width: 50px;
+    }
+
+    #home {
+        background-position: 50% 0%;
+        padding: 0 25px;
+    }
+
+    #about {
+        padding: 0 50px;
+    }
+
+    #about .text {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    #about img {
+        max-width: 36%;
+    }
+
+    .benefits_box {
+        flex-wrap: wrap;
+    }
+
+    .benefits_box .item {
+        max-width: 100%;
+        margin: 0 0 40px;
+    }
+
+    #benefits {
+        padding: 40px 50px;
+        height: auto;
+        max-height: inherit;
+    }
+
+    #roadmap .item2,
+    #roadmap .item3 {
+        margin: 10px 18px;
+    }
+
+    #roadmap .item {
+        margin: 10px 18px;
+    }
+
+    #team {
+        padding: 40px 50px;
+    }
+
+    #team .img_box {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    #FAQ .content {
+        padding: 40px 50px;
+    }
+
+    .faq_box .accordion {
+        width: 100%;
+    }
+
+    .faq_box {
+        flex-wrap: wrap;
+    }
+
+    footer img {
+        max-width: 330px;
+    }
+
+    footer .text br {
+        display: none;
+    }
+
+    footer .text {
+        max-width: 80%;
+    }
+}
+
+@media all and (max-width:1000px) {
+    header .icon_box {
+        display: none;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    .navbar-toggler {
+        background-color: #e8d4a1;
+        border-radius: 0;
+        z-index: 2;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 58px 35px 0;
+    }
+
+
+    .navbar > .container-fluid {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    .navbar-nav {
+            align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #e8d4a1;
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        padding: 180px 80px;
+        z-index: 1;
+        transition: all .3s;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        top: 0;
+    }
+
+    .nav-link {
+        margin: 0px 0 20px;
+        font-size: 18px;
+        color: black;
+    }
+
+    .navbar-toggler-icon {
+        width: 78px;
+        height: 78px;
+    }
+
+    .section {
+        min-height: 100vh;
+    }
+
+    #home .content {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    #home img.text_img {
+        display: block;
+        margin: 0 0 115px;
+        max-width: 490px;
+    }
+
+    #about {
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    #about .content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 89px;
+    }
+
+    #about img {
+        max-width: 410px;
+        margin: -50px 0 -20px;
+    }
+
+    #about .text {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        margin: 0 0 25px;
+        text-align: center;
+    }
+
+    #about .text:last-of-type {
+        margin: 0;
+    }
+
+    #benefits {
+        padding: 40px 0;
+    }
+
+    #benefits .h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        text-shadow: 5px 6px 1px rgb(0 0 0 / 43%);
+    }
+
+    .benefits_box {
+        justify-content: center;
+    }
+
+    .benefits_box .item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+    }
+
+    .benefits_box .title {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .benefits_box ul {
+        font-size: 10px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .benefits_box img {
+        margin: 0 0 10px;
+    }
+
+    #team .team_box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #team {
+        height: auto;
+        max-height: inherit;
+        padding: 20px 0 0px;
+    }
+
+    #team .h1 {
+        font-size: 56px;
+        letter-spacing: 5.6px;
+        margin: 0 0 68px;
+    }
+
+    #team .img_box {
+        width: 350px;
+        height: 350px;
+        margin: 0 0 57px;
+        box-shadow: 2px 25px 10px rgb(0 12 15 / 43%);
+    }
+
+    .team_item {
+        margin: 0 0 45px;
+    }
+
+    #team .name {
+        font-size: 45px;
+        letter-spacing: 4.5px
+    }
+
+    #team .role {
+        font-size: 33px;
+        letter-spacing: 3.3px;
+    }
+
+    #FAQ .content {
+        padding: 37px 22px;
+    }
+
+    #FAQ .h1 {
+        font-size: 116px;
+        letter-spacing: 11.6px;
+    }
+
+    .accordion-button {
+        padding: 25px 40px;
+    }
+
+    footer .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .text_box {
+        padding: 55px 35px 50px;
+    }
+
+    footer .h1 {
+        font-size: 65px;
+        line-height: 60px;
+        letter-spacing: 6.5px;
+        text-align: center;
+        margin: 0 0 35px;
+    }
+
+    footer .text {
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+    }
+
+    footer .joinUs {
+        margin: 40px;
+        font-size: 40px;
+        letter-spacing: 4px;
+        padding: 22px 0px;
+        border-radius: 50px;
+        width: 100%;
+        max-width: 470px;
+        text-align: center;
+        box-shadow: 5px 20px 1px rgb(0 0 0 / 43%);
+    }
+
+    footer img {
+        max-width: 540px;
+        margin: 0;
+    }
+
+}
+
+@media all and (max-width:425px) {
+
+    #home img.text_img {
+        max-width: 80%;
+    }
+
+    #about img {
+        max-width: 100%;
+        margin: 0px 0 10px
+    }
+    #about .content {
+    padding: 0 20px 30px;
+}
+
+    #benefits .content {
+        padding: 0;
+    }
+
+    .benefits_box ul {
+        width: 95%;
+    }
+
+    .benefits_box .text_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #roadmap .item {
+        width: 95%;
+        height: 150px;
+    }
+
+    #roadmap .item .h1 {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0 0 11px;
+    }
+
+    #roadmap .item .text {
+        font-size: 10px;
+    }
+
+    #roadmap .item1 {
+        padding: 29px 32px 25px 31px;
+    }
+
+    #roadmap .item2 {
+        padding: 29px 6px 19px;
+    }
+
+    #roadmap .item3 {
+        29px 0px 27px 0px;
+    }
+
+    #roadmap .item4 {
+        padding: 17px 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #roadmap .item6 {
+        padding: 29px 25px 31px;
+    }
+
+    #roadmap .item6 br,
+    #roadmap .item7 br,
+    #roadmap .item8 br {
+        display: none;
+    }
+
+    #roadmap .item7 {
+        height: 170px;
+        padding: 0px 6px 25px;
+    }
+
+    #roadmap .item8 {
+        padding: 29px 11px 20px;
+    }
+
+    #team .h1 {
+        font-size: 40px;
+        margin: 0 0 56px;
+    }
+
+    #team .img_box {
+        width: 300px;
+        margin: 0 0 30px;
+        height: 300px;
+    }
+
+    #FAQ .h1 {
+        font-size: 71px;
+        letter-spacing: 7.6px;
+    }
+
+    .accordion-button {
+        padding: 25px 10px;
+        font-size: 20px;
+    }
+
+    .accordion-button::after {
+        font-size: 37px;
+    }
+
+    footer .h1 {
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: 0.5px;
+    }
+
+    footer .text_box {
+        padding: 55px 20px 50px;
+    }
+    footer .joinUs {
+    font-size: 21px;
+    letter-spacing: 2px;
+    padding: 13px 0px;
+    border-radius: 19px;
+    box-shadow: 5px 13px 1px rgb(0 0 0 / 43%);
+}
+    footer img
+    {
+        max-width: 100%;
+    }
+}
