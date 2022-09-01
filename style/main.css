@@ -879,9 +879,10 @@ footer img {
 
     #home .content {
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         height: 100%;
+        padding: 160px 0 0;
     }
 
     #home img.text_img {
@@ -1049,9 +1050,13 @@ footer img {
 }
 
 @media all and (max-width:425px) {
+    .navbar-toggler-icon {
+        width: 50px;
+        height: 50px;
+    }
 
     #home img.text_img {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     #about img {
