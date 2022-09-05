@@ -1094,9 +1094,31 @@ footer img {
 
 @media all and (max-width:425px) {
 
-    .navbar-toggler-icon {
+    .navbar-toggler {
         width: 50px;
-        height: 50px;
+        height: 47px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        height: 3px;
+    }
+
+    .navbar-light .navbar-toggler-icon::before {
+        top: -13px;
+        height: 3px;
+    }
+
+    .navbar-light .navbar-toggler-icon::after {
+        top: 13px;
+        height: 3px;
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon::before {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .navbar-toggler.collapsed .navbar-toggler-icon::after {
+        transform: translateY(-17px) rotate(-45deg);
     }
 
     #home img.text_img {
