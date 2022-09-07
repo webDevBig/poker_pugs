@@ -55,9 +55,7 @@ header .icon_box {
 
 .section {
     width: 100vw;
-    height: 100vh;
-    max-height: 1120px;
-    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,11 +76,12 @@ header .icon_box {
 }
 
 #home {
+    height: 100vh;
+    max-height: 1200px;
     background-image: url(../img/home_bg.png);
     background-position: 50% 22%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 66px;
     align-items: flex-end;
 }
 
@@ -127,7 +126,7 @@ header .icon_box {
 
 #benefits {
     background-color: #161d22;
-    padding: 25px 0 0;
+    padding: 50px 0 10px;
 }
 
 #benefits .content {
@@ -185,9 +184,6 @@ header .icon_box {
 
 #roadmap {
     background-color: #1e0e07;
-    min-height: 930px;
-    height: auto;
-    max-height: inherit;
     flex-direction: column;
     padding: 40px 0;
 }
@@ -293,7 +289,6 @@ header .icon_box {
 #team {
     background-color: #00262c;
     padding: 80px 70px;
-    min-height: 950px;
 }
 
 #team .content {
@@ -356,18 +351,14 @@ header .icon_box {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 900px;
-    padding: 0 0 60px;
-    height: auto;
+    padding: 80px 0 60px;
 }
 
 #FAQ .content {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: auto;
-    min-height: 100%;
-    padding: 80px 165px 0;
+    padding: 0px 165px;
 }
 
 #FAQ .h1 {
@@ -460,7 +451,9 @@ footer img {
 @media all and (max-width:1920px) {
     #home {
         background-position: 50% 44%;
+        max-height: 900px;
     }
+
 
     #benefits .h1 {
         font-size: 64px;
@@ -490,9 +483,6 @@ footer img {
 
     #team {
         padding: 70px 70px 50px;
-        min-height: auto;
-        max-height: inherit;
-        height: auto;
     }
 
     #team .img_box {
@@ -514,7 +504,6 @@ footer img {
     }
 
     #FAQ {
-        height: auto;
         padding: 0 0 70px;
     }
 
@@ -527,13 +516,6 @@ footer img {
 
     #about img {
         max-width: 48%;
-    }
-
-    #benefits {
-        padding: 50px 0;
-        height: auto;
-        min-height: auto;
-
     }
 
     .benefits_box ul br {
@@ -583,10 +565,6 @@ footer img {
 
     #team .role {
         font-size: 26px;
-    }
-
-    #FAQ {
-        min-height: 800px;
     }
 
     #FAQ .h1 {
@@ -681,12 +659,6 @@ footer img {
     footer .text_box {
         padding: 26px 0 45px;
     }
-
-    #about {
-        min-height: auto;
-        height: auto;
-        padding: 50px 0;
-    }
 }
 
 @media all and (max-width:1024px) {
@@ -739,9 +711,7 @@ footer img {
     }
 
     #benefits {
-        padding: 40px 50px;
-        height: auto;
-        max-height: inherit;
+        padding: 40px 50px 0;
     }
 
     #roadmap .item2,
@@ -793,7 +763,6 @@ footer img {
     header {
         padding: 58px 0 0px;
         flex-direction: row-reverse;
-        position: fixed;
         z-index: 10;
     }
 
@@ -855,8 +824,10 @@ footer img {
         height: 78px;
     }
 
-    .section {
-        min-height: 100vh;
+    #home {
+        min-height: auto;
+        height: auto;
+        padding: 136px 0 0;
     }
 
     #home .content {
@@ -874,17 +845,10 @@ footer img {
 
     #home img.mobile {
         display: block;
-        position: absolute;
-        bottom: 0;
         width: 115.2%;
         max-width: 540px;
+        margin: -83px 0 0;
     }
-
-    #home img.text_img {
-        display: block;
-        max-width: 490px;
-    }
-
 
     #about {
         padding: 70px 0;
@@ -955,8 +919,6 @@ footer img {
     }
 
     #team {
-        height: auto;
-        max-height: inherit;
         padding: 20px 0 0px;
     }
 
@@ -985,6 +947,10 @@ footer img {
     #team .role {
         font-size: 33px;
         letter-spacing: 3.3px;
+    }
+
+    .accordion-body {
+        padding: 0px 40px 37px;
     }
 
     #FAQ .content {
@@ -1077,6 +1043,20 @@ footer img {
 }
 
 @media all and (max-width:540px) {
+    .discord_icon img {
+        max-width: 11vw;
+    }
+
+    .twitter_icon img {
+        max-width: 10vw;
+    }
+    #home
+    {
+        background-image: url(../img/PPMobile_Background.png);
+        background-position: center;
+        background-size: cover;
+    }
+
     #home img.mobile {
         max-width: inherit;
         left: -23px;
@@ -1089,6 +1069,27 @@ footer img {
     #home {
         max-height: 800px;
         min-height: auto;
+        padding: 14vw 0 0;
+    }
+
+    .benefits_box .img2 {
+        max-width: 130px;
+    }
+
+    #team .team_item {
+        width: 100%;
+    }
+
+    #team .name {
+        font-size: 11vw;
+    }
+
+    #team .role {
+        font-size: 6vw;
+    }
+
+    .accordion-body {
+        padding: 0px 10px 37px;
     }
 }
 
@@ -1097,6 +1098,7 @@ footer img {
     .navbar-toggler {
         width: 50px;
         height: 47px;
+        padding: 8px 8px 11px;
     }
 
     .navbar-light .navbar-toggler-icon {
@@ -1119,11 +1121,6 @@ footer img {
 
     .navbar-toggler.collapsed .navbar-toggler-icon::after {
         transform: translateY(-17px) rotate(-45deg);
-    }
-
-    #home img.text_img {
-        max-width: 100%;
-        padding: 0 25px;
     }
 
     #about img {
@@ -1168,19 +1165,6 @@ footer img {
         width: 300px;
         margin: 0 0 30px;
         height: 300px;
-    }
-
-    #roadmap .item6 .text {
-        font-size: 10px;
-        padding: 0 10px;
-    }
-
-    #roadmap .item8 .text {
-        padding: 0 10px;
-    }
-
-    #roadmap .item8 .h1 {
-        margin: 0 0 10px;
     }
 
     #FAQ .h1 {
